@@ -10,12 +10,13 @@ fetch("https://striveschool-api.herokuapp.com/books")
       card.innerHTML = `
       <div class="card" style="width: 18rem;">
         <img src="${book.img}" class="card-img-top" alt="" />
+        <h5 class="card-title">${book.title}</h5>
+        <p class="card-text">
+          ${book.price} €
+        </p>
         <div class="card-body">
-          <h5 class="card-title">${book.title}</h5>
-          <p class="card-text">
-            ${book.price} €
-          </p>
           <button class="scarta">Scarta</button>
+          <button class="Add">Aggiungi</button>
         </div>
       </div>
       `;
